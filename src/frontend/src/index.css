@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* FarmTrack palette (OKLCH L C H) */
+    /* Primary: deep steel blue #2F5E7E */
+    --primary: 0.43 0.08 225;
+    --primary-foreground: 0.98 0 0;
+
+    /* Page background #EEF3F6 */
+    --background: 0.96 0.012 220;
+    --foreground: 0.18 0.02 235;
+
+    /* Card white */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.02 235;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.02 235;
+
+    --secondary: 0.92 0.015 225;
+    --secondary-foreground: 0.43 0.08 225;
+
+    --muted: 0.94 0.01 220;
+    --muted-foreground: 0.52 0.03 225;
+
+    --accent: 0.92 0.015 225;
+    --accent-foreground: 0.43 0.08 225;
+
+    --destructive: 0.57 0.19 27;
+    --destructive-foreground: 0.98 0 0;
+
+    /* Card borders #E5E7EB */
+    --border: 0.91 0.005 250;
+    --input: 0.91 0.005 250;
+    --ring: 0.43 0.08 225;
+
+    /* Attendance status colors */
+    --status-full: 0.58 0.17 155;
+    --status-half: 0.75 0.16 65;
+    --status-absent: 0.57 0.19 27;
+    --status-extra: 0.56 0.22 258;
+
+    --chart-1: 0.58 0.17 155;
+    --chart-2: 0.75 0.16 65;
+    --chart-3: 0.57 0.19 27;
+    --chart-4: 0.56 0.22 258;
+    --chart-5: 0.43 0.08 225;
+
+    --sidebar: 0.43 0.08 225;
+    --sidebar-foreground: 0.98 0 0;
+    --sidebar-primary: 0.98 0 0;
+    --sidebar-primary-foreground: 0.43 0.08 225;
+    --sidebar-accent: 0.38 0.07 225;
+    --sidebar-accent-foreground: 0.98 0 0;
+    --sidebar-border: 0.38 0.06 225;
+    --sidebar-ring: 0.65 0.06 225;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
